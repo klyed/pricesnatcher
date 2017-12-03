@@ -13,3 +13,7 @@ https://steemit.com/@klye <-- Please visit my blog & vote me for witness!
 
 A low resource nodeJS price feed updater script for STEEM witnesses
 Requires NodeJS + SteemJS + Prompt + Request to run.. Install these with NPM (node package manager) with the commands listed above and it should boot up!
+
+SETUP:
+
+Run the script and it should prompt you to fill in the necessary information to create a config file and get you going! pricesnatcher.config is the file that will be created and will store all setup variables!
