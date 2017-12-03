@@ -1,7 +1,7 @@
 //--------------------------------------------------------------------------
 //---- Pricesnatcher.js v0.0.1 || Open Source Price Feed Node.js Script ----
 //----- Developed by @KLYE || Free to Use for All! || Free to Modify -------
-//---- Rekuirement for apps: Node.js + steem.js + fs + prompt + request ----
+//---- Rekuirements to run: Node.js + steem.js + fs + prompt + reque-st ----
 //-- TO INSTALL DEPENDENCIES FOR APPLICATION:  npm install request --save --
 //--------- npm install prompt --save + npm install request --save ---------
 //--------------------------------------------------------------------------
@@ -247,7 +247,10 @@ function startfeed() {
             steem.broadcast.feedPublish(activekey, witnessname, exchangeRate, function(err, result) {
                 if (err) {
                     console.log("!!! ERROR: Price Feed Update FAILED!");
-                    startfeed();
+                    var sleeptime = Number(interval * 3000);
+                    var sleepmins = Number(sleeptime / 60000);
+                    console.log("Next Price Feed Update: " + sleepmins + " Minute(s)!");
+                    var restartfeed = setInterval(startfeed, sleeptime);
                 };
                 if (result) {
                     console.log("*** SUCCESS: Price Feed Updated!");
