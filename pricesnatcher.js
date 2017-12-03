@@ -1,7 +1,7 @@
 //--------------------------------------------------------------------------
 //---- Pricesnatcher.js v0.0.1 || Open Source Price Feed Node.js Script ----
 //----- Developed by @KLYE || Free to Use for All! || Free to Modify -------
-//---- Rekuirements to run: Node.js + steem.js + fs + prompt + reque-st ----
+//---- Rekuirement for apps: Node.js + steem.js + fs + prompt + request ----
 //-- TO INSTALL DEPENDENCIES FOR APPLICATION:  npm install request --save --
 //--------- npm install prompt --save + npm install request --save ---------
 //--------------------------------------------------------------------------
